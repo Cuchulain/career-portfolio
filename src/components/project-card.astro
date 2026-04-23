@@ -1,6 +1,8 @@
 ---
 import { Icon } from 'astro-icon/components';
-const { project } = Astro.props;
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+const { project, resolvedImages } = Astro.props;
 
 const isSlider = project.images.length > 1;
 ---
@@ -8,18 +10,29 @@ const isSlider = project.images.length > 1;
 <div class="project-card group relative bg-accent/5 border border-accent/10 rounded-2xl overflow-hidden hover:border-accent/40 transition-all duration-500">
   <div class="aspect-video overflow-hidden relative bg-background/50">
     <div class="absolute inset-0 bg-accent/10 group-hover:bg-transparent transition-colors z-10 pointer-events-none"></div>
-    
+
     <div class={`w-full h-full relative ${isSlider ? 'image-slider' : ''}`}>
-      {project.images.map((img: string, index: number) => (
-        <img 
-          src={img}
-          alt={`${project.title} screenshot ${index + 1}`}
-          onerror="this.onerror=null;this.src='placeholder.jpeg';"
-          class={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 ${index === 0 ? 'opacity-100 z-0' : 'opacity-0 z-[-1]'}`}
-        />
-      ))}
+      {project.images.map((img: string, index: number) => {
+        const resolved = resolvedImages?.[index];
+        return resolved ? (
+          <Image
+            src={resolved}
+            alt={`${project.title} screenshot ${index + 1}`}
+            class={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 ${index === 0 ? 'opacity-100 z-0' : 'opacity-0 z-[-1]'}`}
+          />
+        ) : (
+          <Image
+            src={`/${img}`}
+            width="640"
+            height="360"
+            alt={`${project.title} screenshot ${index + 1}`}
+            onerror="this.onerror=null;this.src='placeholder.jpeg';"
+            class={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 ${index === 0 ? 'opacity-100 z-0' : 'opacity-0 z-[-1]'}`}
+          />
+        );
+      })}
     </div>
-    
+
     <div class="absolute top-3 right-3 flex gap-2 z-20">
       {project.platforms.map((p: string) => (
         <div class="p-1.5 bg-background backdrop-blur-md rounded-lg border border-accent/10 text-maintext">
@@ -57,7 +70,7 @@ const isSlider = project.images.length > 1;
 <script>
   function initSliders() {
     const sliders = document.querySelectorAll('.image-slider');
-    
+
     sliders.forEach(slider => {
       const images = slider.querySelectorAll('img');
       if (images.length <= 1) return;
@@ -67,10 +80,10 @@ const isSlider = project.images.length > 1;
         // Hide current
         images[currentIndex].classList.remove('opacity-100', 'z-0');
         images[currentIndex].classList.add('opacity-0', 'z-[-1]');
-        
+
         // Move to next
         currentIndex = (currentIndex + 1) % images.length;
-        
+
         // Show next
         images[currentIndex].classList.remove('opacity-0', 'z-[-1]');
         images[currentIndex].classList.add('opacity-100', 'z-0');
@@ -87,8 +100,8 @@ const isSlider = project.images.length > 1;
     opacity: 0;
     visibility: hidden;
     transform: translateY(40px);
-    transition: 
-      opacity 0.8s ease-out, 
+    transition:
+      opacity 0.8s ease-out,
       transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
       visibility 0.8s;
     will-change: transform, opacity;

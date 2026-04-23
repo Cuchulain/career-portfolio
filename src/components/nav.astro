@@ -9,22 +9,22 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   {
-    label: "Home",
+    label: "Úvod",
     href: "#home",
     icon: `mdi:home`,
   },
   {
-    label: "Career",
+    label: "Kariéra",
     href: "#career",
     icon: `mdi:work`,
   },
   {
-    label: "Projects",
+    label: "Projekty",
     href: "#projects",
     icon: `mdi:computer`,
   },
   {
-    label: "Tech",
+    label: "Technologie",
     href: "#tech",
     icon: `mdi:code-tags`,
   },
@@ -34,7 +34,7 @@ const navItems: NavItem[] = [
   //   icon: `mdi:message`,
   // },
   {
-    label: "Contact",
+    label: "Kontakt",
     href: "#contact",
     icon: `mdi:message`,
   }
@@ -62,9 +62,9 @@ const navItems: NavItem[] = [
               >
                 <div class="absolute -left-6 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full transition-all duration-300 scale-0 opacity-0 nav-indicator hidden md:block" />
                 <span class="md:hidden flex items-center justify-center w-6 h-6">
-                  <Icon 
-                    name={item.icon} 
-                    class="nav-icon w-full h-full text-accent/50 group-hover:text-accent transition-colors duration-300" 
+                  <Icon
+                    name={item.icon}
+                    class="nav-icon w-full h-full text-accent/50 group-hover:text-accent transition-colors duration-300"
                   />
                 </span>
                 <span class="hidden md:inline-block">{item.label}</span>
@@ -107,7 +107,7 @@ const navItems: NavItem[] = [
    nav.scrolling {
     background-color: color-mix(in srgb, var(--color-background), transparent 75%);
     border-color: color-mix(in srgb, var(--color-accent) 30%, transparent);
-    
+
     border-radius: 9999px;
     backdrop-filter: blur(10px);
   }
@@ -176,7 +176,7 @@ const navItems: NavItem[] = [
       /* Force it into its own GPU layer permanently */
       transform: translateZ(0);
       -webkit-transform: translateZ(0);
-      
+
       /* Smooth transition */
       transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
 
@@ -187,7 +187,7 @@ const navItems: NavItem[] = [
     #main-nav.nav-hidden {
       /* transform: translateY(110%) !important; */
       transform: translate3d(0, 110%, 0) !important;
-      
+
       /* Optional: Turn off blur when hidden to save GPU cycles */
       backdrop-filter: blur(0px);
     }
@@ -212,7 +212,7 @@ const navItems: NavItem[] = [
     transform: scale(0.95);
     text-shadow: 0 0 15px var(--color-accent-60);
   }
-  
+
   nav a:not(.active):hover .nav-icon {
     transform: scale(0.95);
     color: var(--color-maintext) !important;

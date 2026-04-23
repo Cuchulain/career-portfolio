@@ -8,10 +8,10 @@ import CareerCard from './career-card.astro';
   <div class="container mx-auto reveal-content" style="animation-delay: 1000ms;">
     <div>
       <h2 class="text-3xl md:text-4xl font-heading font-bold text-maintext mb-2 flex items-center gap-4">
-        <span class="text-accent">/</span> Career
+        <span class="text-accent">/</span> Kariéra
       </h2>
       <p class="text-subtext font-body text-sm max-w-md pb-8">
-        A brief overview of my career
+        Stručný přehled mé kariéry
       </p>
     </div>
 
@@ -25,11 +25,11 @@ import CareerCard from './career-card.astro';
           <div class="scroll-stat relative pl-6">
             {/* Dot for mobile view*/}
             <div class="absolute left-0 top-1 z-10">
-              <div class={`w-4 h-4 rounded-full border-4 border-[#0a0a0a] 
+              <div class={`w-4 h-4 rounded-full border-4 border-[#0a0a0a]
                           ${index === 0 ? 'bg-accent shadow-[0_0_15px_var(--color-accent)] animate-pulse' : 'bg-accent/50'}`}>
               </div>
             </div>
-            
+
             <CareerCard item={item} variant="mobile" />
           </div>
         ))}
@@ -41,7 +41,7 @@ import CareerCard from './career-card.astro';
           <div class="scroll-stat relative grid grid-cols-2">
             {/* Center Dot */}
             <div class="absolute left-1/2 -translate-x-1/2 top-1 z-10">
-              <div class={`w-4 h-4 rounded-full border-4 border-[#0a0a0a] 
+              <div class={`w-4 h-4 rounded-full border-4 border-[#0a0a0a]
                           ${index === 0 ? 'bg-accent shadow-[0_0_15px_var(--color-accent)] animate-pulse' : 'bg-accent/50'}`}>
               </div>
             </div>
@@ -98,7 +98,7 @@ import CareerCard from './career-card.astro';
 <script>
   function revealCards() {
     const cards = document.querySelectorAll('.scroll-stat');
-    
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -107,7 +107,7 @@ import CareerCard from './career-card.astro';
           setTimeout(() => {
             entry.target.classList.add('reveal');
           }, (index % 3) * 150); // Delay resets every row for a clean staggered look
-          
+
           observer.unobserve(entry.target);
         }
       });
@@ -121,7 +121,7 @@ import CareerCard from './career-card.astro';
 
   // Runs on initial load
   revealCards();
-  
+
   // Necessary for Astro View Transitions if you use them
   document.addEventListener('astro:after-swap', revealCards);
 </script>

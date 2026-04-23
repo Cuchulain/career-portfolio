@@ -1,26 +1,42 @@
 [
   {
-    "company": "Demo Company",
-    "role": "Lead Software Engineer",
-    "period": "Oct 2025 - Present",
-    "type": "Full time job",
-    "description": "Leading cross-platform mobile development using Flutter and FastAPI. Focused on scalable system design and high-performance data processing.",
-    "skills": ["Leading", "Collaboration"]
+    "company": "Softopus",
+    "role": "DevOps, Full-stack Developer & Cybersecurity Manager",
+    "period": "2024 - současnost",
+    "type": "Freelance / kontrakt",
+    "description": "Konfigurace serverů, automatizace nasazování aplikací a vývoj napříč backendem i frontendem. Současně odpovědnost za oblast kybernetické bezpečnosti, bezpečnostní dohled nad prostředím a podporu bezpečného provozu aplikací a infrastruktury.",
+    "skills": ["DevOps", "Cybersecurity", "Symfony", "PostgreSQL", "JavaScript", "Bash", "Azure DevOps", "Solr", "Správa serverů"]
   },
   {
-    "company": "Demo Company",
-    "role": "Full-stack Developer",
-    "period": "Sep 2023 - Sep 2025",
-    "type": "Full time job",
-    "description": "Specializing in Business Research Methods and Strategic HRM. Applying analytical frameworks to human capital management.",
-    "skills": ["React", "Node.js", "PostgreSQL", "Docker"]
+    "company": "Stavario",
+    "role": "Senior Developer & Team Leader",
+    "period": "2020 - 2022",
+    "type": "Freelance / kontrakt",
+    "description": "Vedení vývojového týmu a práce na ERP systému a webových prezentacích. Odpovědnost za návrh architektury aplikací, backendový vývoj, infrastrukturu a migraci do prostředí Microsoft Azure a Kubernetes.",
+    "skills": ["Vedení týmu", "Návrh architektury", "PHP", "Nette", "JavaScript", "MariaDB", "Redis", "Docker", "GitHub", "Bash", "Azure", "Kubernetes"]
   },
   {
-    "company": "Demo University of Tech",
-    "role": "BSc in Computer Science",
-    "period": "Jun 2020 - Jun 2024",
-    "type": "Student",
-    "description": "Specializing in Business Research Methods and Strategic HRM. Applying analytical frameworks to human capital management.",
-    "skills": ["C++", "OOP", "Problem Solving"]
+    "company": "ČT",
+    "role": "Software Architect",
+    "period": "2019",
+    "type": "Freelance / kontrakt",
+    "description": "Návrh architektury nové platformy pro zpracování a distribuci videoobsahu, včetně koordinace s vývojovým týmem a technického návrhu integračního řešení.",
+    "skills": ["Návrh architektury", "PHP", "Kafka", "RabbitMQ", "Technické vedení", "Systémový návrh"]
+  },
+  {
+    "company": "CZECH NEWS CENTER",
+    "role": "SW Architect & Senior Full-stack Developer",
+    "period": "2017 - 2018",
+    "type": "HPP / kontrakt",
+    "description": "Vývoj chatbotů pro Facebook a Viber, práce na řešeních využívajících neuronové sítě, rozvoj interního CMS a zavádění dalších technologií v backendu i infrastruktuře.",
+    "skills": ["PHP", "JavaScript", "Nette", "Node.js", "Docker", "Go", "PostgreSQL", "Redis", "RabbitMQ", "AI", "Návrh architektury"]
+  },
+  {
+    "company": "Vybrané další projekty a technické zkušenosti",
+    "role": "Senior Developer / Software Engineer / IT Specialista",
+    "period": "1993 - současnost",
+    "type": "Různé role",
+    "description": "Souhrn dalších dlouhodobých zkušeností ze zakázkového vývoje, interních systémů, databázových aplikací, integrací a správy IT v prostředích Linux a Windows.",
+    "skills": ["PHP", "Delphi", "ASP", "ASP.NET", "MySQL", "PostgreSQL", "Sybase", "Linux", "Windows", "Integrace", "Zakázkový vývoj"]
   }
 ]

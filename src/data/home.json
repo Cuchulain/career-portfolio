@@ -1,72 +1,51 @@
 {
-  "name": "John Doe",
-  "photoUrl": "favicon.svg",
-  "intro": "A brief, compelling introduction about who you are and what you do. Mention your core philosophy, your passion for building digital products, and your drive for creating efficient, high-impact solutions.",
-  "introHtml": "A brief, compelling introduction about who you are and what you do. Mention your core <span class='text-white font-bold'>philosophy</span>, your passion for building digital products, and your drive for creating <span class='text-white font-bold'>efficient</span>, <span class='text-white font-bold'>high-impact</span> solutions.",
-  "webpageTitle": "John Doe",
-  "resumeUrl": "https://example-files.online-convert.com/document/pdf/example.pdf",
-
-  "_comment": "Add your social links below. Leave the 'url' empty to hide the icon. Set 'showInContact' to true or false to control if it appears in the Contact section.",
+  "name": "Jan Čejka",
+  "photoUrl": "portret3.jpeg",
+  "intro": "Senior Software Architect for Web, Backend & Infrastructure",
+  "introHtml": "Navrhuji a vyvíjím spolehlivý software, backendy a infrastrukturu s důrazem na <span class='font-bold'>jednoduchost</span>, <span class='font-bold'>udržitelnost</span> a <span class='font-bold'>dlouhodobou hodnotu</span>. Propojuji architekturu, vývoj a DevOps tak, aby výsledná řešení dobře fungovala nejen dnes, ale i za několik let.",
+  "webpageTitle": "Jan Čejka - Senior Software Architect for Web, Backend & Infrastructure",
+  "resumeUrl": "/cv-jancejka-devops.pdf",
   "socials": [
     {
       "name": "GitHub",
-      "url": "https://github.com/[YOUR_USER_NAME]",
-      "icon": "mdi:github",
-      "showInContact": true
-    },
-    {
-      "name": "LinkedIn",
-      "url": "https://linkedin.com/in/[YOUR_USER_NAME]",
-      "icon": "mdi:linkedin",
-      "showInContact": true
-    },
-    {
-      "name": "Leetcode",
-      "url": "#",
-      "icon": "devicon-plain:leetcode",
-      "showInContact": false
-    },
-    {
-      "name": "Behance",
-      "url": "#",
-      "icon": "devicon-plain:behance",
-      "showInContact": false
+      "url": "https://github.com/cuchulain",
+      "icon": "mdi:github"
     },
     {
       "name": "Email",
-      "url": "mailto:your-mail@example.com",
+      "url": "mailto:job@jancejka.cz",
       "icon": "mdi:email",
       "showInContact": true
     },
     {
+      "name": "Signal",
+      "url": "https://signal.me/#eu/GtcEj1LDcwy0cyv2JuzW3O0zO8yD6WWFdMQqM5U8K6TB4FFhGGBCKYXLt0DSpjKi",
+      "icon": "cbi:signal",
+      "showInContact": true
+    },
+    {
       "name": "Whatsapp",
-      "url": "https://wa.me/[YOUR_WHATSAPP_NUMBER]",
+      "url": "https://wa.me/420799797393",
       "icon": "mdi:whatsapp",
       "showInContact": true
     },
     {
-      "name": "Facebook",
-      "url": "#",
-      "icon": "mdi:facebook",
-      "showInContact": false
-    },
-    {
-      "name": "Messenger",
-      "url": "#",
-      "icon": "mdi:facebook-messenger",
+      "name": "SimpleX Chat",
+      "url": "https://smp10.simplex.im/a#KbPpST2bUHXKoEEwUOeJ1UT1OMglLEDevaFAa172cR4",
+      "icon": "arcticons:simplex",
       "showInContact": true
     },
     {
-      "name": "Instagram",
-      "url": "#",
-      "icon": "mdi:instagram",
-      "showInContact": false
+      "name": "Keybase",
+      "url": "https://keybase.io/mergi",
+      "icon": "arcticons:keybase",
+      "showInContact": true
     },
     {
-      "name": "Twitter",
-      "url": "#",
-      "icon": "mdi:twitter",
-      "showInContact": false
+      "name": "Matrix",
+      "url": "https://matrix.to/#/@merguian:matrix.org",
+      "icon": "arcticons:matrix",
+      "showInContact": true
     }
   ]
 }

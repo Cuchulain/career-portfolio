@@ -1,20 +1,47 @@
 [
   {
-    "title": "Awesome Website",
-    "description": "A high-performance, SEO-optimized web application built with modern frameworks to showcase technical expertise.",
-    "images": ["astro-01.webp", "astro-02.jpeg"],
-    "tech": ["Astro", "Tailwind"],
-    "platforms": ["web"],
-    "link": "https://astro.build/themes/details/career-portfolio-data-driven-astro-ssg/",
-    "category": "Published Website"
+    "title": "Prodejní a billing automatizace pro digitální obsah",
+    "description": "Návrh a vývoj WordPress pluginu pro automatizaci prodejního procesu: objednávkové formuláře, vystavení faktur, kontrola plateb, online platby, práce se subscription logikou a automatické povolování přístupu ke chráněnému obsahu po zaplacení. Silná ukázka produktového přístupu, backendové logiky, integrací a návrhu obchodních procesů.",
+    "images": ["project-wpfakturace.png"],
+    "tech": ["PHP", "WordPress", "MySQL", "Platební integrace", "Automatizace", "Subscriptions"],
+    "platforms": ["web","wordpress"],
+    "link": "#",
+    "category": "Vlastní produkt"
   },
   {
-    "title": "Demo Mobile App",
-    "description": "A high-performance mobile application built with modern frameworks to showcase technical expertise.",
-    "images": ["astro-02.jpeg", "#"],
-    "tech": ["Flutter", "Dart", "REST API"],
-    "platforms": ["apple-ios", "android"],
-    "link": "https://github.com/nbakh16/career-portfolio-template",
-    "category": "Hobby"
+    "title": "ERP platforma a vedení vývojového týmu",
+    "description": "Vývoj a rozvoj ERP systému a souvisejících webových částí, vedení menšího týmu vývojářů, návrh architektury aplikace a podíl na migraci infrastruktury do Microsoft Azure a Kubernetes.",
+    "images": ["project-stavario.png"],
+    "tech": ["PHP", "Nette", "JavaScript", "MariaDB", "Redis", "Docker", "Bash", "Azure", "Kubernetes"],
+    "platforms": ["web", "linux","azure"],
+    "link": "https://stavario.com",
+    "category": "ERP / Architektura"
+  },
+  {
+    "title": "Architektura platformy pro video distribuci",
+    "description": "Architektonický návrh nové platformy pro zpracování a distribuci video obsahu. Ukázka systémového návrhu, integrační architektury a návrhu komunikace mezi částmi distribuovaného řešení.",
+    "images": ["produkt-video.png"],
+    "tech": ["PHP", "Kafka", "RabbitMQ", "Software Architecture"],
+    "platforms": ["web","multimedia"],
+    "link": "#",
+    "category": "Architektura systému"
+  },
+  {
+    "title": "Chatboti a backendové integrační služby",
+    "description": "Vývoj chatbotů pro Facebook a Viber, interního CMS a souvisejících backendových částí včetně práce s messagingem, datovým tokem a integrační logikou.",
+    "images": ["produkt-chatbot.png"],
+    "tech": ["PHP", "Python", "JavaScript", "Nette", "Node.js", "Docker", "Go", "PostgreSQL", "Redis", "RabbitMQ"],
+    "platforms": ["web"],
+    "link": "#",
+    "category": "Integrace / AI"
+  },
+  {
+    "title": "DevOps automatizace a bezpečný provoz aplikací",
+    "description": "Konfigurace serverů, automatizace nasazování aplikací, práce s Azure DevOps Pipelines a dohled nad bezpečným provozem prostředí. Reprezentativní ukázka spojení vývoje, infrastruktury, provozu a kybernetické bezpečnosti.",
+    "images": ["produkt-devops.png"],
+    "tech": ["Symfony", "PostgreSQL", "JavaScript", "Bash", "Azure DevOps", "Jenkins", "GitHub Workflows", "Solr", "DevOps", "Cybersecurity"],
+    "platforms": ["web", "linux","security"],
+    "link": "#",
+    "category": "DevOps / Security"
   }
 ]

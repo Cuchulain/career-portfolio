@@ -9,10 +9,10 @@ import localData from '../data/home.json';
     <div class="space-y-12">
       <div class="contact-header opacity-0 mb-16">
         <h2 class="text-3xl md:text-4xl font-heading font-bold text-maintext mb-2 flex items-center gap-4">
-            <span class="text-accent">/</span> Contact Me
+            <span class="text-accent">/</span> Kontaktujte mě
           </h2>
         <p class="text-subtext font-body text-sm max-w-md">
-          Feel free to reach out. I'm always open to discussing new projects and opportunities.
+          Neváhejte mě kontaktovat. Vždy jsem otevřený diskusi o nových projektech a příležitostech.
         </p>
       </div>
 
@@ -21,14 +21,14 @@ import localData from '../data/home.json';
         .filter((social) => social.showInContact && social.url && social.url !== "#" && social.url !== "")
         .map((social) => (
           <!-- Added 'contact-card' and 'opacity-0' here -->
-          <a 
-            href={social.url} 
-            target="_blank" 
+          <a
+            href={social.url}
+            target="_blank"
             class="contact-card opacity-0 group p-8 bg-accent/5 border border-accent/10 rounded-2xl hover:border-accent/40 hover:bg-accent/10 transition-all duration-300"
           >
-            <Icon 
-              name={social.icon} 
-              class="w-10 h-10 text-accent mb-4 mx-auto group-hover:scale-110 transition-transform" 
+            <Icon
+              name={social.icon}
+              class="w-10 h-10 text-accent mb-4 mx-auto group-hover:scale-110 transition-transform"
             />
             <h3 class="text-maintext font-bold mb-1">{social.name}</h3>
             <p class="text-subtext text-xs truncate px-2">
@@ -46,9 +46,9 @@ import localData from '../data/home.json';
           </p>
           <div class="flex items-center flex-wrap justify-center gap-3 text-subtext text-xs font-body order-1 md:order-2">
             <span>Built using </span>
-            <a 
-              href="https://astro.build/themes/details/career-portfolio-data-driven-astro-ssg/" 
-              target="_blank" 
+            <a
+              href="https://astro.build/themes/details/career-portfolio-data-driven-astro-ssg/"
+              target="_blank"
               class="text-maintext hover:text-accent transition-colors underline decoration-white/30 underline-offset-4 hover:decoration-accent"
             >
               Career Portfolio Theme
@@ -63,7 +63,7 @@ import localData from '../data/home.json';
           </div>
         </div>
       </div>
-      
+
     </div>
   </div>
 </section>
@@ -96,7 +96,7 @@ import localData from '../data/home.json';
     const header = document.querySelector('.contact-header');
     const footer = document.querySelector('.contact-footer');
     const cards = document.querySelectorAll('.contact-card');
-    
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -112,11 +112,11 @@ import localData from '../data/home.json';
             // Header and Footer reveal immediately
             target.classList.add('reveal');
           }
-          
+
           observer.unobserve(target);
         }
       });
-    }, { 
+    }, {
       threshold: 0.15,
       rootMargin: '0px 0px -10px 0px'
     });
@@ -125,10 +125,10 @@ import localData from '../data/home.json';
     if (footer) observer.observe(footer);
     cards.forEach(card => observer.observe(card));
   }
-  
+
   // Runs on initial load
   window.addEventListener('load', revealContact);
-  
+
   // Support for Astro View Transitions
   document.addEventListener('astro:after-swap', revealContact);
 </script>

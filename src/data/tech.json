@@ -1,35 +1,39 @@
 {
   "categories": [
     {
-      "title": "Mobile Development",
+      "title": "Backend",
       "skills": [
-        { "name": "Flutter", "level": 3, "icon": "skill-icons:flutter-dark" },
-        { "name": "Dart", "level": 3, "icon": "skill-icons:dart-dark" },
-        { "name": "Kotlin", "level": 1, "icon": "skill-icons:kotlin-dark" }
+        { "name": "PHP", "level": 3, "icon": "skill-icons:php-dark" },
+        { "name": "Symfony", "level": 3, "icon": "skill-icons:symfony-dark" },
+        { "name": "Nette", "level": 3, "icon": "simple-icons:nette" },
+        { "name": "Doctrine", "level": 2, "icon": "simple-icons:doctrine" }
       ]
     },
     {
       "title": "Frontend",
       "skills": [
-        { "name": "Astro", "level": 2, "icon": "skill-icons:astro" },
-        { "name": "HTML", "level": 2, "icon": "skill-icons:html" },
+        { "name": "HTML", "level": 3, "icon": "skill-icons:html" },
         { "name": "CSS", "level": 2, "icon": "skill-icons:css" },
-        { "name": "Tailwind CSS", "level": 1, "icon": "skill-icons:tailwindcss-dark" }
+        { "name": "JavaScript", "level": 3, "icon": "skill-icons:javascript" },
+        { "name": "React", "level": 1, "icon": "skill-icons:react-dark" }
       ]
     },
     {
-      "title": "Backend",
+      "title": "Databáze",
       "skills": [
-        { "name": "FastAPI", "level": 2, "icon": "skill-icons:fastapi" },
-        { "name": "Python", "level": 2, "icon": "skill-icons:python-dark" },
-        { "name": "Firebase", "level": 3, "icon": "vscode-icons:file-type-firebase" }
+        { "name": "MySQL / MariaDB", "level": 3, "icon": "skill-icons:mysql-dark" },
+        { "name": "PostgreSQL", "level": 2, "icon": "skill-icons:postgresql-dark" },
+        { "name": "Redis", "level": 2, "icon": "skill-icons:redis-dark" }
       ]
     },
     {
-      "title": "Database",
+      "title": "DevOps & Architektura",
       "skills": [
-        { "name": "SQLite", "level": 3, "icon": "skill-icons:sqlite" },
-        { "name": "PostgreSQL", "level": 2, "icon": "skill-icons:postgresql-dark" }
+        { "name": "Docker", "level": 3, "icon": "skill-icons:docker" },
+        { "name": "Linux", "level": 3, "icon": "skill-icons:linux-dark" },
+        { "name": "CI/CD", "level": 2, "icon": "mdi:infinity" },
+        { "name": "Software Architecture", "level": 3, "icon": "mdi:sitemap" },
+        { "name": "Cybersecurity", "level": 1, "icon": "mdi:shield-check" }
       ]
     }
   ]

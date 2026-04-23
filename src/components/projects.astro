@@ -1,22 +1,35 @@
 ---
+import type { ImageMetadata } from 'astro';
 import ProjectCard from './project-card.astro';
 import projectsData from '../data/projects.json';
+
+const imageImports = import.meta.glob<{ default: ImageMetadata }>(
+  '../assets/images/projects/*.{png,jpg,jpeg,webp}',
+  { eager: true }
+);
+
+function resolveImages(filenames: string[]): (ImageMetadata | null)[] {
+  return filenames.map(filename => {
+    const key = `../assets/images/projects/${filename}`;
+    return imageImports[key]?.default ?? null;
+  });
+}
 ---
 
 <section id="projects" class="section-container overflow-hidden">
   <div class="container mx-auto">
     <div class="mb-16 project-header">
       <h2 class="text-3xl md:text-4xl font-heading font-bold text-maintext mb-2 flex items-center gap-4">
-          <span class="text-accent">/</span> Featured Projects
+          <span class="text-accent">/</span> Vybrané Projekty
         </h2>
       <p class="text-subtext font-body text-sm max-w-md">
-        A selection of professional work, published apps, and experimental prototypes.
+        Výběr profesionálních prací a publikovaných aplikací.
       </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {projectsData.map((project) => (
-        <ProjectCard project={project} />
+        <ProjectCard project={project} resolvedImages={resolveImages(project.images)} />
       ))}
     </div>
   </div>
@@ -50,38 +63,38 @@ import projectsData from '../data/projects.json';
   const initProjectReveal = () => {
     const header = document.querySelector('.project-header');
     const cards = document.querySelectorAll('.project-card');
-    
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const target = entry.target as HTMLElement;
-          
+
           // Check if the intersecting element is the header
           if (target.classList.contains('project-header')) {
             target.classList.add('reveal');
             observer.unobserve(target);
-          } 
+          }
           // Check if the intersecting element is a project card
           else if (target.classList.contains('project-card')) {
             const index = Array.from(cards).indexOf(target);
-            
+
             // Stagger effect based on row position (only for cards)
             setTimeout(() => {
               target.classList.add('reveal');
             }, (index % 3) * 150);
-            
+
             observer.unobserve(target);
           }
         }
       });
-    }, { 
-      threshold: 0.15, 
-      rootMargin: '0px 0px -10px 0px' 
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -10px 0px'
     });
 
     // Observe the header
     if (header) observer.observe(header);
-    
+
     // Observe all cards
     cards.forEach(card => observer.observe(card));
   };
