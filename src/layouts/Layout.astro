@@ -1,17 +1,40 @@
 ---
 import '../styles/global.css'
+import { getImage } from 'astro:assets';
+import defaultOgImageSrc from '../assets/images/portret3.png';
 
 interface Props {
   title: string;
+  description?: string;
+  image?: string;
+  canonical?: string;
 }
 
-const { title } = Astro.props;
+const {
+  title,
+  description = 'Senior Software Architect for Web, Backend & Infrastructure – Jan Čejka',
+  image,
+  canonical = Astro.url.href,
+} = Astro.props;
+
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? '';
+
+const processedOgImage = await getImage({
+  src: defaultOgImageSrc,
+  width: 1200,
+  height: 630,
+  format: 'jpeg',
+});
+
+const ogImage = image
+  ? (image.startsWith('http') ? image : `${siteUrl}${image}`)
+  : `${siteUrl}${processedOgImage.src}`;
 
 
 // ----- THEME VARIABLE -----
 // FEEL FREE TO CHANGE THIS TO ONE OF THE OPTIONS
 // Options: 'default', 'strategic', 'innovator', 'executive'
-const baseTheme = 'default'; 
+const baseTheme = 'default';
 
 const defaultTheme = `${baseTheme}-dark`;
 ---
@@ -23,6 +46,25 @@ const defaultTheme = `${baseTheme}-dark`;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/favicon.ico" />
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Jan Čejka" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={canonical} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="Jan Čejka" />
+    <meta property="og:locale" content="cs_CZ" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
 
     <!-- THEME TOGGLE SCRIPT -->
     <script is:inline define:vars={{ baseTheme, defaultTheme }}>
@@ -38,8 +80,8 @@ const defaultTheme = `${baseTheme}-dark`;
 
   </head>
   <body class="bg-container relative min-h-screen overflow-x-hidden antialiased">
-    <div 
-      id="matrix-container" 
+    <div
+      id="matrix-container"
       class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none"
       style="mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);"
     ></div>
@@ -59,7 +101,7 @@ const defaultTheme = `${baseTheme}-dark`;
           id="progress-circle"
           cx="28" cy="28" r="24"
           fill="none"
-          stroke="currentColor" 
+          stroke="currentColor"
           stroke-width="3"
           stroke-dasharray="150.7"
           stroke-dashoffset="150.7"
@@ -67,7 +109,7 @@ const defaultTheme = `${baseTheme}-dark`;
           class="text-accent transition-all duration-100"
         ></circle>
       </svg>
-      
+
       <div class="absolute text-accent group-hover:scale-110 transition-transform">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
           <path d="M13.0001 7.82843V20H11.0001V7.82843L5.63614 13.1924L4.22192 11.7782L12.0001 4L19.7783 11.7782L18.3641 13.1924L13.0001 7.82843Z"></path>
@@ -88,21 +130,21 @@ const defaultTheme = `${baseTheme}-dark`;
         const char = characters[Math.floor(Math.random() * characters.length)];
         // const color = colors[Math.floor(Math.random() * colors.length)];
         const color = "var(--color-textrain)";
-        
-        const left = Math.random() * 100; 
+
+        const left = Math.random() * 100;
         const duration = 4 + Math.random() * 8; // 4s to 10s
         const size = 10 + Math.random() * 10; // 10px to 20px
-        
+
         span.innerText = char;
         span.className = 'falling-letter';
         span.style.left = `${left}vw`;
         span.style.color = color;
         span.style.fontSize = `${size}px`;
         span.style.animationDuration = `${duration}s`;
-        
+
         // Add a slight glow effect
         span.style.textShadow = `0 0 5px ${color}`;
-        
+
         container.appendChild(span);
 
         setTimeout(() => {
@@ -116,7 +158,7 @@ const defaultTheme = `${baseTheme}-dark`;
         setInterval(createLetter, 250);
       } else {
         // Static scatter effect for mobile optimization
-        const mobileCount = 20; 
+        const mobileCount = 20;
         for (let i = 0; i < mobileCount; i++) {
           createStaticLetter();
         }
@@ -128,27 +170,27 @@ const defaultTheme = `${baseTheme}-dark`;
         const span = document.createElement('span');
         const char = characters[Math.floor(Math.random() * characters.length)];
         const color = "var(--color-textrain)";
-        
-        const left = Math.random() * 100; 
+
+        const left = Math.random() * 100;
         const top = Math.random() * 90; // Random vertical position
         const size = 10 + Math.random() * 10;
-        
+
         span.innerText = char;
         span.className = 'falling-letter'; // from global.css
-        
+
         // Override animation for mobile 'none'
-        span.style.animation = 'none'; 
+        span.style.animation = 'none';
         span.style.left = `${left}vw`;
         span.style.top = `${top}vh`;
         span.style.color = color;
         span.style.fontSize = `${size}px`;
         span.style.opacity = (0.1 + Math.random() * 0.3).toString();
         span.style.textShadow = `0 0 5px ${color}`;
-        
+
         container.appendChild(span);
       }
 
-      
+
       // ** SCROLL TO TOP ** //
       const toTopBtn = document.getElementById('to-top');
       const progressCircle = document.getElementById('progress-circle');
@@ -158,7 +200,7 @@ const defaultTheme = `${baseTheme}-dark`;
       function handleScroll() {
         const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
         const scrollPercentage = window.scrollY / scrollHeight;
-        
+
         // Update the Circle Progress
         const offset = circumference - (scrollPercentage * circumference);
         if (progressCircle) {
@@ -213,7 +255,7 @@ const defaultTheme = `${baseTheme}-dark`;
         if (startTime === null) startTime = currentTime;
         const timeElapsed = currentTime - startTime;
         const run = easeOutQuad(timeElapsed, startPosition, -startPosition, duration);
-        
+
         window.scrollTo(0, run);
 
         if (timeElapsed < duration) {

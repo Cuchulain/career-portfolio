@@ -10,6 +10,7 @@ import localData from '../data/home.json';
 
 interface ProfileData {
   webpageTitle: string;
+  intro: string;
 }
 
 const isApiLive = import.meta.env.PROD; // Auto true in production
@@ -30,10 +31,10 @@ if (isApiLive && BASE_URL) {
   data = localData as ProfileData;
 }
 
-const { webpageTitle } = data;
+const { webpageTitle, intro } = data;
 ---
 
-<Layout title={webpageTitle}>
+<Layout title={webpageTitle} description={intro}>
   	<Nav />
 	<Home />
 	<Career />
