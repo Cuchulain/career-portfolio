@@ -2,6 +2,7 @@
 import '../styles/global.css'
 import { getImage } from 'astro:assets';
 import defaultOgImageSrc from '../assets/images/profilovka-obdelnik.png';
+import faviconSrc from '../assets/images/favicon1.png';
 
 interface Props {
   title: string;
@@ -26,6 +27,11 @@ const processedOgImage = await getImage({
   format: 'jpeg',
 });
 
+const processedFavicon = await getImage({
+  src: faviconSrc,
+  format: 'png',
+});
+
 const ogImage = image
   ? (image.startsWith('http') ? image : `${siteUrl}${image}`)
   : `${siteUrl}${processedOgImage.src}`;
@@ -44,7 +50,7 @@ const defaultTheme = `${baseTheme}-dark`;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href={processedFavicon.src} />
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="author" content="Jan Čejka" />
