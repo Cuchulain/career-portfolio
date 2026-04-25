@@ -1,8 +1,9 @@
 ---
 import { Icon } from 'astro-icon/components';
 import localData from '../data/home.json';
-import { Image } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
+import placeholderSrc from '../assets/images/placeholder.png';
 
 //Data Definitions
 interface Social {
@@ -46,6 +47,8 @@ const localPhotos = import.meta.glob<{ default: ImageMetadata }>(
 );
 const resolvedPhoto: ImageMetadata | null =
   localPhotos[`../assets/images/${photoUrl}`]?.default ?? null;
+
+const processedPlaceholder = await getImage({ src: placeholderSrc, width: 96, height: 96, format: 'jpeg' });
 ---
 
 <section id="home" class="flex flex-col items-center justify-center section-container md:pt-30 gap-1 min-h-[80vh] text-center">
@@ -63,7 +66,7 @@ const resolvedPhoto: ImageMetadata | null =
           width="96"
           height="96"
           alt={name}
-          onerror="this.onerror=null;this.src='/placeholder.jpeg';"
+          onerror={`this.onerror=null;this.src='${processedPlaceholder.src}';`}
           class="w-full h-full object-cover scale-110"
         />
       )}

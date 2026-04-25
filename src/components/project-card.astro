@@ -1,8 +1,11 @@
 ---
 import { Icon } from 'astro-icon/components';
-import { Image } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
+import placeholderSrc from '../assets/images/placeholder.png';
 const { project, resolvedImages } = Astro.props;
+
+const processedPlaceholder = await getImage({ src: placeholderSrc, width: 640, height: 360, format: 'jpeg' });
 
 const isSlider = project.images.length > 1;
 ---
@@ -26,7 +29,7 @@ const isSlider = project.images.length > 1;
             width="640"
             height="360"
             alt={`${project.title} screenshot ${index + 1}`}
-            onerror="this.onerror=null;this.src='placeholder.jpeg';"
+            onerror={`this.onerror=null;this.src='${processedPlaceholder.src}';`}
             class={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 ${index === 0 ? 'opacity-100 z-0' : 'opacity-0 z-[-1]'}`}
           />
         );
