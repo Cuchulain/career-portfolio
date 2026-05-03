@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.8",
+    "@astrojs/sitemap": "^3.7.2",
     "@fontsource-variable/inter": "^5.2.8",
     "@fontsource-variable/space-grotesk": "^5.2.10",
     "@iconify-json/arcticons": "^1.2.51",
