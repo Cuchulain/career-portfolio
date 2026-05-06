@@ -9,42 +9,49 @@
     {
       "name": "GitHub",
       "url": "https://github.com/cuchulain",
-      "icon": "mdi:github"
+      "icon": "mdi:github",
+      "showInHero": true
     },
     {
       "name": "Email",
       "url": "mailto:job@jancejka.cz",
       "icon": "mdi:email",
+      "showInHero": true,
       "showInContact": true
     },
     {
       "name": "Signal",
       "url": "https://signal.me/#eu/GtcEj1LDcwy0cyv2JuzW3O0zO8yD6WWFdMQqM5U8K6TB4FFhGGBCKYXLt0DSpjKi",
       "icon": "cbi:signal",
+      "showInHero": true,
       "showInContact": true
     },
     {
       "name": "Whatsapp",
       "url": "https://wa.me/420799797393",
       "icon": "mdi:whatsapp",
+      "showInHero": false,
       "showInContact": true
     },
     {
       "name": "SimpleX Chat",
       "url": "https://smp10.simplex.im/a#KbPpST2bUHXKoEEwUOeJ1UT1OMglLEDevaFAa172cR4",
       "icon": "arcticons:simplex",
+      "showInHero": false,
       "showInContact": true
     },
     {
       "name": "Keybase",
       "url": "https://keybase.io/mergi",
       "icon": "arcticons:keybase",
+      "showInHero": false,
       "showInContact": true
     },
     {
       "name": "Matrix",
       "url": "https://matrix.to/#/@merguian:matrix.org",
       "icon": "arcticons:matrix",
+      "showInHero": false,
       "showInContact": true
     }
   ]

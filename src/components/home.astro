@@ -10,6 +10,8 @@ interface Social {
   name: string;
   url: string;
   icon: string;
+  showInHero?: boolean;
+  showInContact?: boolean;
 }
 
 interface ProfileData {
@@ -124,7 +126,7 @@ const processedPlaceholder = await getImage({ src: placeholderSrc, width: 96, he
 </div>
 
   <div class="flex gap-6 mt-4 reveal-content" style="animation-delay: 500ms;">
-    {socials.filter((social) => social.url && social.url !== "#" && social.url !== "").map((social) => (
+    {socials.filter((social) => social.showInHero && social.url && social.url !== "#" && social.url !== "").map((social) => (
       <a
         href={social.url}
         target="_blank"
