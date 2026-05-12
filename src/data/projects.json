@@ -1,23 +1,5 @@
 [
   {
-    "title": "Vědomé Uzdravení – prodejní web e-booku",
-    "description": "Přepis webu z WordPressu do Astro s novým designem. Prodejní stránka e-booku o vědomém léčení, s optimalizovaným výkonem, minimálním hostingovým nákladem a bez bezpečnostních rizik WordPressu.",
-    "images": ["project-vedome-uzdraveni.png"],
-    "tech": ["Astro", "TypeScript", "Tailwind CSS", "WordPress migrace"],
-    "platforms": ["web"],
-    "link": "https://vedome-uzdraveni.cz",
-    "category": "Web / Migrace"
-  },
-  {
-    "title": "Ohnivá žena – web pro koučku a průvodkyni",
-    "description": "Přepis webu z WordPressu do Astro s novým designem. Prezentační a blogový web pro holístickou koučku, výrazně rychlejší, bezpečnější a s nižšími provozními náklady oproti původnímu WordPress řešení.",
-    "images": ["project-ohnivazena.jpg"],
-    "tech": ["Astro", "TypeScript", "Tailwind CSS", "WordPress migrace"],
-    "platforms": ["web"],
-    "link": "https://ohnivazena.cz",
-    "category": "Web / Migrace"
-  },
-  {
     "title": "Prodejní a billing automatizace pro digitální obsah",
     "description": "Návrh a vývoj WordPress pluginu pro automatizaci prodejního procesu: objednávkové formuláře, vystavení faktur, kontrola plateb, online platby, práce se subscription logikou a automatické povolování přístupu ke chráněnému obsahu po zaplacení. Silná ukázka produktového přístupu, backendové logiky, integrací a návrhu obchodních procesů.",
     "images": ["project-wpfakturace.png"],
@@ -52,6 +34,24 @@
     "platforms": ["web"],
     "link": "#",
     "category": "Integrace / AI"
+  },
+  {
+    "title": "Vědomé Uzdravení – prodejní web e-booku",
+    "description": "Přepis webu z WordPressu do Astro s novým designem. Prodejní stránka e-booku o vědomém léčení, s optimalizovaným výkonem, minimálním hostingovým nákladem a bez bezpečnostních rizik WordPressu.",
+    "images": ["project-vedome-uzdraveni.png"],
+    "tech": ["Astro", "TypeScript", "Tailwind CSS", "WordPress migrace"],
+    "platforms": ["web"],
+    "link": "https://vedome-uzdraveni.cz",
+    "category": "Web / Migrace"
+  },
+  {
+    "title": "Ohnivá žena – web pro koučku a průvodkyni",
+    "description": "Přepis webu z WordPressu do Astro s novým designem. Prezentační a blogový web pro holístickou koučku, výrazně rychlejší, bezpečnější a s nižšími provozními náklady oproti původnímu WordPress řešení.",
+    "images": ["project-ohnivazena.jpg"],
+    "tech": ["Astro", "TypeScript", "Tailwind CSS", "WordPress migrace"],
+    "platforms": ["web"],
+    "link": "https://ohnivazena.cz",
+    "category": "Web / Migrace"
   },
   {
     "title": "DevOps automatizace a bezpečný provoz aplikací",
