@@ -2,7 +2,6 @@
 import '../styles/global.css'
 import { getImage } from 'astro:assets';
 import defaultOgImageSrc from '../assets/images/profilovka-obdelnik.png';
-import faviconSrc from '../assets/images/favicon1.png';
 
 interface Props {
   title: string;
@@ -27,11 +26,11 @@ const processedOgImage = await getImage({
   format: 'jpeg',
 });
 
-// PNG: Sharp preserves alpha channel when outputting png
-const appleTouchIcon = await getImage({ src: faviconSrc, width: 180, height: 180, format: 'png' });
-const faviconIcon32 = await getImage({ src: faviconSrc, width: 32, height: 32, format: 'png' });
-const manifestIcon192 = await getImage({ src: faviconSrc, width: 192, height: 192, format: 'png' });
-const manifestIcon512 = await getImage({ src: faviconSrc, width: 512, height: 512, format: 'png' });
+// Pre-generated favicons in /public/ with transparency preserved (via Sharp directly)
+const appleTouchIcon = { src: '/favicon-180.png' };
+const faviconIcon32 = { src: '/favicon-32.png' };
+const manifestIcon192 = { src: '/favicon-192.png' };
+const manifestIcon512 = { src: '/favicon-512.png' };
 
 const ogImage = image
   ? (image.startsWith('http') ? image : `${siteUrl}${image}`)
