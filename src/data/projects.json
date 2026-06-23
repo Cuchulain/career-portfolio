@@ -1,5 +1,14 @@
 [
   {
+    "title": "Renomio – platforma pro weby expertů",
+    "description": "Vlastní produkt: platforma pro rychlou tvorbu webů pro kouče, lektory a poradce na česko-slovenském trhu. Spojuje statický web optimalizovaný pro SEO a AI vyhledávání, kontaktní formuláře a newsletter s automatizací, rezervační systém pro osobní i online konzultace, příjem plateb přes Stripe a Lemon Squeezy a členskou sekci s chráněným obsahem a distribucí souborů. Web je AI-generovaný a nasazený na výkonném statickém hostingu.",
+    "images": ["project-renomio.png"],
+    "tech": ["Astro", "TypeScript", "Tailwind CSS", "Stripe", "Lemon Squeezy", "Automatizace", "AI"],
+    "platforms": ["web"],
+    "link": "https://renomio.cz",
+    "category": "Vlastní produkt"
+  },
+  {
     "title": "Prodejní a billing automatizace pro digitální obsah",
     "description": "Návrh a vývoj WordPress pluginu pro automatizaci prodejního procesu: objednávkové formuláře, vystavení faktur, kontrola plateb, online platby, práce se subscription logikou a automatické povolování přístupu ke chráněnému obsahu po zaplacení. Silná ukázka produktového přístupu, backendové logiky, integrací a návrhu obchodních procesů.",
     "images": ["project-wpfakturace.png"],
