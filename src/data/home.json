@@ -14,7 +14,7 @@
     },
     {
       "name": "Email",
-      "url": "mailto:job@jancejka.cz",
+      "url": "mailto:dev@jancejka.cz",
       "icon": "mdi:email",
       "showInHero": true,
       "showInContact": true
