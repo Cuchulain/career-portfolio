@@ -38,21 +38,21 @@
       "url": "https://smp10.simplex.im/a#KbPpST2bUHXKoEEwUOeJ1UT1OMglLEDevaFAa172cR4",
       "icon": "arcticons:simplex",
       "showInHero": false,
-      "showInContact": true
+      "showInContact": false
     },
     {
       "name": "Keybase",
       "url": "https://keybase.io/mergi",
       "icon": "arcticons:keybase",
       "showInHero": false,
-      "showInContact": true
+      "showInContact": false
     },
     {
       "name": "Matrix",
       "url": "https://matrix.to/#/@merguian:matrix.org",
       "icon": "arcticons:matrix",
       "showInHero": false,
-      "showInContact": true
+      "showInContact": false
     }
   ]
 }
