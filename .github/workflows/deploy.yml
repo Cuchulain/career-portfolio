@@ -25,8 +25,8 @@ jobs:
         with:
           path: .
           node-version: 22
-          package-manager: npm
-          build-cmd: npm run build
+          package-manager: pnpm
+          build-cmd: pnpm run build
           out-dir: dist
 
   deploy:
