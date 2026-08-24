@@ -70,5 +70,14 @@
     "platforms": ["web", "linux","security"],
     "link": "#",
     "category": "DevOps / Security"
+  },
+  {
+    "title": "Magický web – AI průvodce záměrem",
+    "description": "Vlastní produkt ve vývoji: bezpečný AI průvodce, který pomáhá proměnit neurčité přání v jasný osobní záměr a konkrétní první krok. Třívrstvá architektura paměti, verzovaná RAG znalostní báze s autorizovaným přístupem, Stripe Billing, serverová hranice důvěry pro identitu a autorizaci, GDPR/DPIA připraveno. Vývoj řízen pomocí Kata task ledgeru, implementace s AI agentem Codex.",
+    "images": ["project-magicky-web.png"],
+    "tech": ["Node.js", "TypeScript", "PostgreSQL", "pgvector", "RAG", "Stripe", "AI agenti", "Bezpečnost"],
+    "platforms": ["web"],
+    "link": "#",
+    "category": "Vlastní produkt"
   }
 ]
