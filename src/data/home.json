@@ -31,7 +31,7 @@
       "url": "https://wa.me/420799797393",
       "icon": "mdi:whatsapp",
       "showInHero": false,
-      "showInContact": true
+      "showInContact": false
     },
     {
       "name": "SimpleX Chat",
