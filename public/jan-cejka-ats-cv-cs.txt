@@ -28,7 +28,7 @@ Technologie:
 - Frontend: HTML, CSS, JavaScript, jQuery, React, Tailwind CSS
 - Architecture: backend architecture, integrations, legacy stabilization, performance, security basics, team support
 Pracovní zkušenosti:
-2024 - současnost | DevOps, Full-stack Developer & Cybersecurity Manager | Softopus
+2024 - 2026 | DevOps, Full-stack Developer & Cybersecurity Manager | Softopus
 Konfigurace serverů, automatizace nasazování aplikací a vývoj napříč backendem i frontendem. Odpovědnost za oblast kybernetické bezpečnosti, bezpečnostní dohled nad prostředím a podporu bezpečného provozu aplikací a infrastruktury.
 
 Technologie: DevOps, Cybersecurity, Symfony, PostgreSQL, JavaScript, Bash, Azure DevOps, Solr, Linux
