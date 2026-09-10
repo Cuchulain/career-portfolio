@@ -4,7 +4,40 @@
   "intro": "Senior softwarový architekt / vývojář – web, backend, infrastruktura",
   "introHtml": "Navrhuji a vyvíjím spolehlivý software, backendy a infrastrukturu s důrazem na <span class='font-bold'>jednoduchost</span>, <span class='font-bold'>udržitelnost</span> a <span class='font-bold'>dlouhodobou hodnotu</span>. Propojuji architekturu, vývoj a DevOps tak, aby výsledná řešení dobře fungovala nejen dnes, ale i za několik let. Aktivně pracuji s <span class='font-bold'>AI agenty</span> a vyvíjím vlastní - stavím na nich reálné produkty a pomáhám firmám řídit <span class='font-bold'>AI-asistovaný vývoj</span> tak, aby přinášel výsledky bez technického dluhu.",
   "webpageTitle": "Jan Čejka - Senior Software Architect for Web, Backend & Infrastructure",
-  "resumeUrl": "/jan-cejka-architect-cv-cs.pdf",
+  "resumes": [
+    {
+      "label": "Senior PHP Developer",
+      "language": "CZ",
+      "format": "PDF",
+      "url": "/jan-cejka-senior-php-cv-cs.pdf",
+      "primary": true
+    },
+    {
+      "label": "Software Architect",
+      "language": "CZ",
+      "format": "PDF",
+      "url": "/jan-cejka-architect-cv-cs.pdf"
+    },
+    {
+      "label": "DevOps / Infrastructure",
+      "language": "CZ",
+      "format": "PDF",
+      "url": "/jan-cejka-devops-cv-cs.pdf"
+    },
+    {
+      "label": "Compact CV",
+      "language": "EN",
+      "format": "PDF",
+      "url": "/jan-cejka-compact-cv-en.pdf"
+    },
+    {
+      "label": "Senior PHP – ATS verze",
+      "language": "CZ",
+      "format": "TXT",
+      "url": "/jan-cejka-ats-cv-cs.txt",
+      "ats": true
+    }
+  ],
   "socials": [
     {
       "name": "GitHub",
