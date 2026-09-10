@@ -1,5 +1,6 @@
 Jan Čejka
-Senior software architekt / PHP vývojář s DevOps přesahem
+Senior PHP vývojář
+Symfony · Nette · modernizace a stabilizace backendů
 
 Kontakt:
 E-mail: dev@jancejka.cz
@@ -11,49 +12,49 @@ Režim práce: Remote-first / hybrid po domluvě
 Lokalita: Česká republika
 
 Profil:
-Senior PHP / Symfony / Nette vývojář se silným architektonickým a DevOps přesahem. Pomáhám firmám převzít, stabilizovat a dále rozvíjet existující webové aplikace, backendy a interní systémy. Mám více než 30 let zkušeností v IT a kombinuji vývoj v PHP s návrhem architektury, API integracemi, databázemi, Dockerem, Linuxem, CI/CD a provozem aplikací v produkčním prostředí.
+Senior PHP vývojář zaměřený na převzetí, stabilizaci a modernizaci existujících webových aplikací a backendů. Pracuji přímo s kódem v PHP 8.x, Symfony a Nette, navrhuji databázová řešení a API integrace. Vedle aplikačního vývoje řeším také Docker/Linux prostředí, CI/CD a spolehlivý produkční provoz.
 
 
 Klíčové přínosy:
-- převzetí, stabilizace a rozvoj existujících aplikací
-- návrh udržitelné backendové a integrační architektury
-- PHP 8.x, Symfony, Nette, Doctrine, REST API
-- Docker, Linux, CI/CD, správa serverů a produkční provoz
-- databáze PostgreSQL, MySQL/MariaDB, MS SQL
-- technické vedení, komunikace s byznysem a podpora týmu
+- převzetí a rychlá orientace v existujícím PHP kódu
+- modernizace starších aplikací bez zbytečného přepisování
+- backendový vývoj v PHP 8.x, Symfony a Nette
+- návrh REST API, integrací a databázových řešení
+- diagnostika výkonových a provozních problémů
+- automatizace nasazování pomocí Dockeru a CI/CD
+- technické vedení a komunikace s provozem i zadavateli
 Technologie:
-- Backend: PHP 8.x, Symfony, Nette, Doctrine, REST API, Node.js, Go, Python
-- DevOps & Infrastructure: Docker, Linux, Bash, CI/CD, GitHub Actions, GitLab CI/CD, Azure DevOps, Kubernetes, monitoring
-- Databases: PostgreSQL, MySQL/MariaDB, MS SQL, Redis, RabbitMQ, Solr
-- Frontend: HTML, CSS, JavaScript, jQuery, React, Tailwind CSS
-- Architecture: backend architecture, integrations, legacy stabilization, performance, security basics, team support
+- PHP: PHP 8.x, Symfony, Nette, Doctrine, REST API
+- Databáze: PostgreSQL, MySQL/MariaDB, MS SQL, Redis
+- Integrace a zpracování dat: RabbitMQ, Solr, Kafka
+- Nasazování a provoz: Docker, Linux, Bash, CI/CD, GitHub Actions, GitLab CI/CD, Azure DevOps
+- Doplňkové technologie: JavaScript, Node.js
 Pracovní zkušenosti:
-2024 - 2026 | DevOps, Full-stack Developer & Cybersecurity Manager | Softopus
-Konfigurace serverů, automatizace nasazování aplikací a vývoj napříč backendem i frontendem. Odpovědnost za oblast kybernetické bezpečnosti, bezpečnostní dohled nad prostředím a podporu bezpečného provozu aplikací a infrastruktury.
-
-Technologie: DevOps, Cybersecurity, Symfony, PostgreSQL, JavaScript, Bash, Azure DevOps, Solr, Linux
-2020 - 2022 | Senior Developer & Team Leader | Stavario
-Vedení vývojového týmu, vývoj ERP systému a webových částí, návrh architektury aplikací, backendový vývoj, infrastruktura a migrace do Microsoft Azure a Kubernetes.
-
+2024 - 2026 | Senior PHP vývojář s DevOps přesahem | Softopus
+- Vývoj a údržba backendových i frontendových částí aplikací včetně práce se Symfony a PostgreSQL.
+- Konfigurace Linux serverů a automatizace nasazování prostřednictvím Azure DevOps.
+- Odpovědnost za zabezpečení prostředí a podporu bezpečného provozu aplikací a infrastruktury.
+Technologie: DevOps, kybernetická bezpečnost, Symfony, PostgreSQL, JavaScript, Bash, Azure DevOps, Solr, Linux
+2020 - 2022 | Senior PHP vývojář a vedoucí vývojového týmu | Stavario
+- Vývoj ERP systému a jeho webových částí v PHP, Nette a MariaDB.
+- Návrh aplikační architektury a technické vedení vývojového týmu.
+- Zapojení do infrastruktury a migrace aplikace do Microsoft Azure a Kubernetes.
 Technologie: PHP, Nette, JavaScript, MariaDB, Redis, Docker, GitHub, Bash, Azure, Kubernetes
-2019 | Software Architect | Česká televize
-Návrh architektury platformy pro zpracování a distribuci video obsahu. Důraz na datové toky, integrační služby, fronty, škálovatelnost a provozní spolehlivost.
-
-Technologie: Architecture, PHP, JavaScript, Kafka, RabbitMQ, Docker, Linux
-2017 - 2018 | SW Architect & Senior Full-stack Developer | Czech News Center
-Vývoj chatbotů pro Facebook a Viber, interního CMS a integračních služeb. Zapojení do implementace AI/neuronových sítí a dalších backendových technologií.
-
+2019 | Softwarový architekt | Česká televize
+- Návrh backendové a integrační architektury platformy pro zpracování a distribuci video obsahu.
+- Návrh datových toků a služeb využívajících Kafka a RabbitMQ s důrazem na škálovatelnost a provozní spolehlivost.
+Technologie: architektura, PHP, JavaScript, Kafka, RabbitMQ, Docker, Linux
+2017 - 2018 | Softwarový architekt a seniorní vývojář backendu i frontendu | Czech News Center
+- Vývoj interního CMS, backendových integračních služeb a chatbotů pro Facebook a Viber.
+- Implementace v PHP, Nette, Node.js a PostgreSQL včetně napojení na Redis a RabbitMQ.
+- Zapojení do implementace řešení využívajících neuronové sítě.
 Technologie: PHP, Nette, JavaScript, Node.js, Go, PostgreSQL, Redis, RabbitMQ, Docker
-1993 - současnost | Senior Developer / Software Engineer / IT specialista | Zakázkový vývoj / OSVČ
-Dlouhodobý vývoj webových, backendových a databázových systémů, integrace, správa serverů, automatizace a technická podpora menších i větších projektů.
+Dřívější zkušenosti:
+Dřívější praxe
+Zakázkový vývoj webových, backendových a databázových systémů, integrací a provozních nástrojů.
 
-Technologie: PHP, Delphi, ASP/ASP.NET, SQL, Linux, Windows, Docker, integrations
-Vybrané typy projektů:
-- Převzetí a stabilizace existujících aplikací: Analýza legacy kódu, návrh postupné modernizace, zlepšení nasazování, provozu a dlouhodobé udržitelnosti.
-- Architektura platformy pro video distribuci: Návrh backendové a integrační architektury pro zpracování a distribuci video obsahu.
-- Chatboti a backendové integrační služby: Vývoj chatbotů, CMS a služeb pro redakční a mediální prostředí.
-- WordPress plugin pro automatizaci prodeje: Objednávkové formuláře, fakturace, kontrola plateb, online platby a řízení přístupu k placenému obsahu.
-- DevOps automatizace a bezpečný provoz: Docker/Linux infrastruktura, CI/CD, monitoring, správa serverů a automatizace nasazování.
+Technologie: PHP, SQL, Linux, Docker, integrace
+
 Jazyky:
 - Čeština - rodilý mluvčí
 - Angličtina - dobrá písemná komunikace, mluvený projev zatím rozvíjím
