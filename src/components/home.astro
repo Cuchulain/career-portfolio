@@ -52,10 +52,10 @@ if (isApiLive && BASE_URL) {
 
 const { name, photoUrl, intro, introHtml, socials } = data;
 const fallbackResume: Resume = {
-  label: 'Senior PHP Developer',
+  label: 'Software Architect',
   language: 'CZ',
   format: 'PDF',
-  url: '/jan-cejka-senior-php-cv-cs.pdf',
+  url: '/jan-cejka-architect-cv-cs.pdf',
   primary: true,
 };
 const resumes: Resume[] = data.resumes?.length
@@ -106,7 +106,7 @@ const processedPlaceholder = await getImage({ src: placeholderSrc, width: 96, he
     <h1 class="mt-4 text-5xl md:text-7xl font-heading font-bold text-maintext tracking-tight">
       {name}
     </h1>
-    <br>
+    <p class="mt-5 mb-4 text-xl md:text-2xl font-heading font-medium text-accent">{intro}</p>
     <p
       class="text-gray font-body text-lg leading-relaxed"
       set:html={introHtml}

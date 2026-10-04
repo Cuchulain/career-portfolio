@@ -1,83 +1,196 @@
 [
   {
-    "title": "Renomio – platforma pro weby expertů",
-    "description": "Vlastní produkt: platforma pro rychlou tvorbu webů pro kouče, lektory a poradce na česko-slovenském trhu. Spojuje statický web optimalizovaný pro SEO a AI vyhledávání, kontaktní formuláře a newsletter s automatizací, rezervační systém pro osobní i online konzultace, příjem plateb přes Stripe a Lemon Squeezy a členskou sekci s chráněným obsahem a distribucí souborů. Web je AI-generovaný a nasazený na výkonném statickém hostingu.",
-    "images": ["project-renomio.png"],
-    "tech": ["Astro", "TypeScript", "Tailwind CSS", "Stripe", "Lemon Squeezy", "Automatizace", "AI"],
-    "platforms": ["web"],
-    "link": "https://renomio.cz",
-    "category": "Vlastní produkt"
-  },
-  {
-    "title": "Prodejní a billing automatizace pro digitální obsah",
-    "description": "Návrh a vývoj WordPress pluginu pro automatizaci prodejního procesu: objednávkové formuláře, vystavení faktur, kontrola plateb, online platby, práce se subscription logikou a automatické povolování přístupu ke chráněnému obsahu po zaplacení. Silná ukázka produktového přístupu, backendové logiky, integrací a návrhu obchodních procesů.",
-    "images": ["project-wpfakturace.png"],
-    "tech": ["PHP", "WordPress", "MySQL", "Platební integrace", "Automatizace", "Subscriptions"],
-    "platforms": ["web","wordpress"],
-    "link": "#",
-    "category": "Vlastní produkt"
-  },
-  {
-    "title": "ERP platforma a vedení vývojového týmu",
-    "description": "Vývoj a rozvoj ERP systému a souvisejících webových částí, vedení menšího týmu vývojářů, návrh architektury aplikace a podíl na migraci infrastruktury do Microsoft Azure a Kubernetes.",
-    "images": ["project-stavario.png"],
-    "tech": ["PHP", "Nette", "JavaScript", "MariaDB", "Redis", "Docker", "Bash", "Azure", "Kubernetes"],
-    "platforms": ["web", "linux","azure"],
-    "link": "https://stavario.com",
-    "category": "ERP / Architektura"
-  },
-  {
     "title": "Architektura platformy pro video distribuci",
     "description": "Architektonický návrh nové platformy pro zpracování a distribuci video obsahu. Ukázka systémového návrhu, integrační architektury a návrhu komunikace mezi částmi distribuovaného řešení.",
-    "images": ["produkt-video.png"],
-    "tech": ["PHP", "Kafka", "RabbitMQ", "Software Architecture"],
-    "platforms": ["web","multimedia"],
+    "images": [
+      "produkt-video.png"
+    ],
+    "tech": [
+      "PHP",
+      "Kafka",
+      "RabbitMQ",
+      "Software Architecture"
+    ],
+    "platforms": [
+      "web",
+      "multimedia"
+    ],
     "link": "#",
     "category": "Architektura systému"
   },
   {
+    "title": "ERP platforma a vedení vývojového týmu",
+    "description": "Vývoj a rozvoj ERP systému a souvisejících webových částí, vedení menšího týmu vývojářů, návrh architektury aplikace a podíl na migraci infrastruktury do Microsoft Azure a Kubernetes.",
+    "images": [
+      "project-stavario.png"
+    ],
+    "tech": [
+      "PHP",
+      "Nette",
+      "JavaScript",
+      "MariaDB",
+      "Redis",
+      "Docker",
+      "Bash",
+      "Azure",
+      "Kubernetes"
+    ],
+    "platforms": [
+      "web",
+      "linux",
+      "azure"
+    ],
+    "link": "https://stavario.com",
+    "category": "ERP / Architektura"
+  },
+  {
+    "title": "DevOps automatizace a bezpečný provoz aplikací",
+    "description": "Konfigurace serverů, automatizace nasazování aplikací, práce s Azure DevOps Pipelines a dohled nad bezpečným provozem prostředí. Reprezentativní ukázka spojení vývoje, infrastruktury, provozu a kybernetické bezpečnosti.",
+    "images": [
+      "produkt-devops.png"
+    ],
+    "tech": [
+      "Symfony",
+      "PostgreSQL",
+      "JavaScript",
+      "Bash",
+      "Azure DevOps",
+      "Jenkins",
+      "GitHub Workflows",
+      "Solr",
+      "DevOps",
+      "Cybersecurity"
+    ],
+    "platforms": [
+      "web",
+      "linux",
+      "security"
+    ],
+    "link": "#",
+    "category": "DevOps / Security"
+  },
+  {
     "title": "Chatboti a backendové integrační služby",
     "description": "Vývoj chatbotů pro Facebook a Viber, interního CMS a souvisejících backendových částí včetně práce s messagingem, datovým tokem a integrační logikou.",
-    "images": ["produkt-chatbot.png"],
-    "tech": ["PHP", "Python", "JavaScript", "Nette", "Node.js", "Docker", "Go", "PostgreSQL", "Redis", "RabbitMQ"],
-    "platforms": ["web"],
+    "images": [
+      "produkt-chatbot.png"
+    ],
+    "tech": [
+      "PHP",
+      "Python",
+      "JavaScript",
+      "Nette",
+      "Node.js",
+      "Docker",
+      "Go",
+      "PostgreSQL",
+      "Redis",
+      "RabbitMQ"
+    ],
+    "platforms": [
+      "web"
+    ],
     "link": "#",
     "category": "Integrace / AI"
   },
   {
+    "title": "Prodejní a billing automatizace pro digitální obsah",
+    "description": "Návrh a vývoj WordPress pluginu pro automatizaci prodejního procesu: objednávkové formuláře, vystavení faktur, kontrola plateb, online platby, práce se subscription logikou a automatické povolování přístupu ke chráněnému obsahu po zaplacení. Silná ukázka produktového přístupu, backendové logiky, integrací a návrhu obchodních procesů.",
+    "images": [
+      "project-wpfakturace.png"
+    ],
+    "tech": [
+      "PHP",
+      "WordPress",
+      "MySQL",
+      "Platební integrace",
+      "Automatizace",
+      "Subscriptions"
+    ],
+    "platforms": [
+      "web",
+      "wordpress"
+    ],
+    "link": "#",
+    "category": "Vlastní produkt"
+  },
+  {
+    "title": "Magický web – AI průvodce záměrem",
+    "description": "Vlastní produkt ve vývoji: bezpečný AI průvodce, který pomáhá proměnit neurčité přání v jasný osobní záměr a konkrétní první krok. Třívrstvá architektura paměti, verzovaná RAG znalostní báze s autorizovaným přístupem, Stripe Billing, serverová hranice důvěry pro identitu a autorizaci, GDPR/DPIA připraveno. Vývoj řízen pomocí Kata task ledgeru, implementace s AI agentem Codex.",
+    "images": [
+      "project-magicky-web.png"
+    ],
+    "tech": [
+      "Node.js",
+      "TypeScript",
+      "PostgreSQL",
+      "pgvector",
+      "RAG",
+      "Stripe",
+      "AI agenti",
+      "Bezpečnost"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "link": "#",
+    "category": "Vlastní produkt"
+  },
+  {
+    "title": "Renomio – platforma pro weby expertů",
+    "description": "Vlastní produkt: platforma pro rychlou tvorbu webů pro kouče, lektory a poradce na česko-slovenském trhu. Spojuje statický web optimalizovaný pro SEO a AI vyhledávání, kontaktní formuláře a newsletter s automatizací, rezervační systém pro osobní i online konzultace, příjem plateb přes Stripe a Lemon Squeezy a členskou sekci s chráněným obsahem a distribucí souborů. Web je AI-generovaný a nasazený na výkonném statickém hostingu.",
+    "images": [
+      "project-renomio.png"
+    ],
+    "tech": [
+      "Astro",
+      "TypeScript",
+      "Tailwind CSS",
+      "Stripe",
+      "Lemon Squeezy",
+      "Automatizace",
+      "AI"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "link": "https://renomio.cz",
+    "category": "Vlastní produkt"
+  },
+  {
     "title": "Vědomé Uzdravení – prodejní web e-booku",
-    "description": "Přepis webu z WordPressu do Astro s novým designem. Prodejní stránka e-booku o vědomém léčení, s optimalizovaným výkonem, minimálním hostingovým nákladem a bez bezpečnostních rizik WordPressu.",
-    "images": ["project-vedome-uzdraveni.png"],
-    "tech": ["Astro", "TypeScript", "Tailwind CSS", "WordPress migrace"],
-    "platforms": ["web"],
+    "description": "Přepis prodejního webu e-booku z WordPressu do Astro s novým designem a statickým nasazováním. Práce na výkonu webu a zjednodušení jeho provozu.",
+    "images": [
+      "project-vedome-uzdraveni.png"
+    ],
+    "tech": [
+      "Astro",
+      "TypeScript",
+      "Tailwind CSS",
+      "WordPress migrace"
+    ],
+    "platforms": [
+      "web"
+    ],
     "link": "https://vedome-uzdraveni.cz",
     "category": "Web / Migrace"
   },
   {
     "title": "Ohnivá žena – web pro koučku a průvodkyni",
-    "description": "Přepis webu z WordPressu do Astro s novým designem. Prezentační a blogový web pro holístickou koučku, výrazně rychlejší, bezpečnější a s nižšími provozními náklady oproti původnímu WordPress řešení.",
-    "images": ["project-ohnivazena.jpg"],
-    "tech": ["Astro", "TypeScript", "Tailwind CSS", "WordPress migrace"],
-    "platforms": ["web"],
+    "description": "Přepis prezentačního a blogového webu z WordPressu do Astro s novým designem. Migrace obsahu a zjednodušení provozu pomocí statického webu.",
+    "images": [
+      "project-ohnivazena.jpg"
+    ],
+    "tech": [
+      "Astro",
+      "TypeScript",
+      "Tailwind CSS",
+      "WordPress migrace"
+    ],
+    "platforms": [
+      "web"
+    ],
     "link": "https://ohnivazena.cz",
     "category": "Web / Migrace"
-  },
-  {
-    "title": "DevOps automatizace a bezpečný provoz aplikací",
-    "description": "Konfigurace serverů, automatizace nasazování aplikací, práce s Azure DevOps Pipelines a dohled nad bezpečným provozem prostředí. Reprezentativní ukázka spojení vývoje, infrastruktury, provozu a kybernetické bezpečnosti.",
-    "images": ["produkt-devops.png"],
-    "tech": ["Symfony", "PostgreSQL", "JavaScript", "Bash", "Azure DevOps", "Jenkins", "GitHub Workflows", "Solr", "DevOps", "Cybersecurity"],
-    "platforms": ["web", "linux","security"],
-    "link": "#",
-    "category": "DevOps / Security"
-  },
-  {
-    "title": "Magický web – AI průvodce záměrem",
-    "description": "Vlastní produkt ve vývoji: bezpečný AI průvodce, který pomáhá proměnit neurčité přání v jasný osobní záměr a konkrétní první krok. Třívrstvá architektura paměti, verzovaná RAG znalostní báze s autorizovaným přístupem, Stripe Billing, serverová hranice důvěry pro identitu a autorizaci, GDPR/DPIA připraveno. Vývoj řízen pomocí Kata task ledgeru, implementace s AI agentem Codex.",
-    "images": ["project-magicky-web.png"],
-    "tech": ["Node.js", "TypeScript", "PostgreSQL", "pgvector", "RAG", "Stripe", "AI agenti", "Bezpečnost"],
-    "platforms": ["web"],
-    "link": "#",
-    "category": "Vlastní produkt"
   }
 ]

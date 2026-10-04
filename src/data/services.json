@@ -1,0 +1,31 @@
+{
+  "title": "S čím pomohu",
+  "intro": "Největší přínos mám při převzetí existujícího projektu, technickém rozboru a rozhodování o dalším směru. Propojuji zkušenosti z vývoje a DevOps, abych pomohl rozlišit zásadní problém od jeho příznaků.",
+  "areas": [
+    {
+      "title": "Rozbor aplikace a provozu",
+      "text": "Hledání příčin problémů existujícího systému, posouzení backendové a integrační architektury a technický rozbor při převzetí projektu."
+    },
+    {
+      "title": "Nasazování a infrastruktura",
+      "text": "Posouzení CI/CD, provozních závislostí a škálovatelnosti. Návrh priorit a konkrétních kroků ke zlepšení."
+    },
+    {
+      "title": "Posouzení prototypu před nasazením",
+      "text": "Technické posouzení prototypu vytvořeného týmem nebo s pomocí AI. Přehled rizik, ověření klíčových předpokladů a zadání dalších změn."
+    }
+  ],
+  "serviceTitle": "Technický rozbor a návrh dalšího postupu",
+  "input": "Vycházím z konkrétního problému, dostupného kódu a dokumentace, relevantních provozních informací a rozhovoru s týmem.",
+  "outputs": [
+    "Přehled současného stavu a významných závislostí.",
+    "Nálezy s podklady, nejistotami a prioritami.",
+    "Varianty řešení a jejich hlavní dopady.",
+    "Doporučené pořadí kroků a předpoklady realizace.",
+    "Předání závěrů a doporučení realizačnímu týmu."
+  ],
+  "collaborationTitle": "Jak spolupracuji",
+  "collaboration": "Nejlépe pracuji na ohraničeném problému s jasným výstupem. Rozbor končí předáním závěrů a doporučeného postupu týmu. Prototyp, zapojení do vývoje a následné konzultace domlouváme podle potřeby. Pro dlouhodobou implementaci spolupracuji s týmem, který má určeného vlastníka realizace.",
+  "ai": "Pracuji také s AI agenty a vyvíjím vlastní produkty. Zkušenosti s AI propojuji s backendovým vývojem, integracemi a provozem.",
+  "cta": "Probrat současný stav systému"
+}
