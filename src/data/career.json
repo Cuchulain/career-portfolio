@@ -1,11 +1,32 @@
 [
   {
+    "company": "Online platforma",
+    "role": "DevOps",
+    "period": "10/2026 - současnost",
+    "type": "",
+    "description": "Zapojení do převzetí projektu od původního týmu a jeho otevírání veřejným testerům. Aktuálním zaměřením je automatizace CI/CD a škálování v cloudu. Role má postupně zahrnout také backendový vývoj.",
+    "skills": [
+      "CI/CD",
+      "Škálování v cloudu"
+    ]
+  },
+  {
     "company": "Softopus",
     "role": "DevOps, Full-stack Developer & Cybersecurity Manager",
     "period": "2024 - 2026",
     "type": "Freelance / kontrakt",
     "description": "Konfigurace serverů, automatizace nasazování aplikací a vývoj napříč backendem i frontendem. Současně odpovědnost za oblast kybernetické bezpečnosti, bezpečnostní dohled nad prostředím a podporu bezpečného provozu aplikací a infrastruktury.",
-    "skills": ["DevOps", "Cybersecurity", "Symfony", "PostgreSQL", "JavaScript", "Bash", "Azure DevOps", "Solr", "Správa serverů"]
+    "skills": [
+      "DevOps",
+      "Cybersecurity",
+      "Symfony",
+      "PostgreSQL",
+      "JavaScript",
+      "Bash",
+      "Azure DevOps",
+      "Solr",
+      "Správa serverů"
+    ]
   },
   {
     "company": "Stavario",
@@ -13,7 +34,20 @@
     "period": "2020 - 2022",
     "type": "Freelance / kontrakt",
     "description": "Vedení vývojového týmu a práce na ERP systému a webových prezentacích. Odpovědnost za návrh architektury aplikací, backendový vývoj, infrastrukturu a migraci do prostředí Microsoft Azure a Kubernetes.",
-    "skills": ["Vedení týmu", "Návrh architektury", "PHP", "Nette", "JavaScript", "MariaDB", "Redis", "Docker", "GitHub", "Bash", "Azure", "Kubernetes"]
+    "skills": [
+      "Vedení týmu",
+      "Návrh architektury",
+      "PHP",
+      "Nette",
+      "JavaScript",
+      "MariaDB",
+      "Redis",
+      "Docker",
+      "GitHub",
+      "Bash",
+      "Azure",
+      "Kubernetes"
+    ]
   },
   {
     "company": "ČT",
@@ -21,7 +55,14 @@
     "period": "2019",
     "type": "Freelance / kontrakt",
     "description": "Návrh architektury nové platformy pro zpracování a distribuci videoobsahu, včetně koordinace s vývojovým týmem a technického návrhu integračního řešení.",
-    "skills": ["Návrh architektury", "PHP", "Kafka", "RabbitMQ", "Technické vedení", "Systémový návrh"]
+    "skills": [
+      "Návrh architektury",
+      "PHP",
+      "Kafka",
+      "RabbitMQ",
+      "Technické vedení",
+      "Systémový návrh"
+    ]
   },
   {
     "company": "CZECH NEWS CENTER",
@@ -29,7 +70,19 @@
     "period": "2017 - 2018",
     "type": "HPP / kontrakt",
     "description": "Vývoj chatbotů pro Facebook a Viber, práce na řešeních využívajících neuronové sítě, rozvoj interního CMS a zavádění dalších technologií v backendu i infrastruktuře.",
-    "skills": ["PHP", "JavaScript", "Nette", "Node.js", "Docker", "Go", "PostgreSQL", "Redis", "RabbitMQ", "AI", "Návrh architektury"]
+    "skills": [
+      "PHP",
+      "JavaScript",
+      "Nette",
+      "Node.js",
+      "Docker",
+      "Go",
+      "PostgreSQL",
+      "Redis",
+      "RabbitMQ",
+      "AI",
+      "Návrh architektury"
+    ]
   },
   {
     "company": "Vybrané další projekty a technické zkušenosti",
@@ -37,6 +90,18 @@
     "period": "1993 - současnost",
     "type": "Různé role",
     "description": "Souhrn dalších dlouhodobých zkušeností ze zakázkového vývoje, interních systémů, databázových aplikací, integrací a správy IT v prostředích Linux a Windows.",
-    "skills": ["PHP", "Delphi", "ASP", "ASP.NET", "MySQL", "PostgreSQL", "Sybase", "Linux", "Windows", "Integrace", "Zakázkový vývoj"]
+    "skills": [
+      "PHP",
+      "Delphi",
+      "ASP",
+      "ASP.NET",
+      "MySQL",
+      "PostgreSQL",
+      "Sybase",
+      "Linux",
+      "Windows",
+      "Integrace",
+      "Zakázkový vývoj"
+    ]
   }
 ]

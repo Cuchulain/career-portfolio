@@ -12,10 +12,11 @@ Režim práce: Remote-first / hybrid po domluvě
 Lokalita: Česká republika
 
 Profil:
-Senior PHP vývojář zaměřený na převzetí, stabilizaci a modernizaci existujících webových aplikací a backendů. Pracuji přímo s kódem v PHP 8.x, Symfony a Nette, navrhuji databázová řešení a API integrace. Vedle aplikačního vývoje řeším také Docker/Linux prostředí, CI/CD a spolehlivý produkční provoz.
+Senior PHP vývojář zaměřený na porozumění existujícím aplikacím, diagnostiku problémů a návrh jejich stabilizace a modernizace. Vycházím z praktických zkušeností s PHP 8.x, Symfony, Nette, databázemi a API integracemi i z provozu v Docker/Linux prostředí. Připravuji technická doporučení a podle potřeby ověřuji návrh v kódu. Rozsah implementace a následné podpory domlouvám předem.
 
 
 Klíčové přínosy:
+- diagnostika existujících PHP aplikací a návrh dalšího postupu
 - převzetí a rychlá orientace v existujícím PHP kódu
 - modernizace starších aplikací bez zbytečného přepisování
 - backendový vývoj v PHP 8.x, Symfony a Nette
@@ -30,6 +31,9 @@ Technologie:
 - Nasazování a provoz: Docker, Linux, Bash, CI/CD, GitHub Actions, GitLab CI/CD, Azure DevOps
 - Doplňkové technologie: JavaScript, Node.js
 Pracovní zkušenosti:
+10/2026 - současnost | DevOps | Online platforma
+Zapojení do převzetí projektu od původního týmu a jeho otevírání veřejným testerům. Aktuálním zaměřením je automatizace CI/CD a škálování v cloudu. Role má postupně zahrnout také backendový vývoj.
+
 2024 - 2026 | Senior PHP vývojář s DevOps přesahem | Softopus
 - Vývoj a údržba backendových i frontendových částí aplikací včetně práce se Symfony a PostgreSQL.
 - Konfigurace Linux serverů a automatizace nasazování prostřednictvím Azure DevOps.

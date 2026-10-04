@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css'
+import profileData from '../data/home.json';
 import { getImage } from 'astro:assets';
 import defaultOgImageSrc from '../assets/images/profilovka-kreslena-obdelnik-dev.png';
 
@@ -12,7 +13,7 @@ interface Props {
 
 const {
   title,
-  description = 'Senior Software Architect for Web, Backend & Infrastructure – Jan Čejka',
+  description = profileData.description,
   image,
   canonical = Astro.url.href,
 } = Astro.props;

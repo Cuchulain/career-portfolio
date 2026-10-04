@@ -14,6 +14,11 @@ const navItems: NavItem[] = [
     icon: `mdi:home`,
   },
   {
+    label: "Spolupráce",
+    href: "#services",
+    icon: "mdi:lightbulb-outline",
+  },
+  {
     label: "Kariéra",
     href: "#career",
     icon: `mdi:work`,
@@ -51,7 +56,7 @@ const navItems: NavItem[] = [
   >
     <div class="container mx-auto flex justify-center items-center p-3 reveal-content" style="animation-delay: 700ms;">
       <ul
-        class="flex w-full justify-between md:space-x-6 md:justify-center md:gap-12 gap-1"
+        class="flex w-full justify-between md:space-x-6 md:justify-center md:gap-6 gap-1"
       >
         {
           navItems.map((item) => (
@@ -243,7 +248,7 @@ const navItems: NavItem[] = [
       const scrollProgress = Math.min(window.scrollY / maxScroll, 1);
       const easeProgress = 1 - Math.pow(1 - scrollProgress, 4);
 
-      const minWidth = 620;
+      const minWidth = 720;
       const maxWidth = window.innerWidth * 0.8;
       const currentWidth = maxWidth - (maxWidth - minWidth) * easeProgress;
 

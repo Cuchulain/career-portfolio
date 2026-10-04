@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Nav from "../components/nav.astro";
+import Services from "../components/services.astro";
 import Home from "../components/home.astro";
 import Tech from "../components/tech.astro";
 import Projects from "../components/projects.astro";
@@ -11,6 +12,7 @@ import localData from '../data/home.json';
 interface ProfileData {
   webpageTitle: string;
   intro: string;
+  description?: string;
 }
 
 const isApiLive = import.meta.env.PROD; // Auto true in production
@@ -31,12 +33,14 @@ if (isApiLive && BASE_URL) {
   data = localData as ProfileData;
 }
 
-const { webpageTitle, intro } = data;
+const { webpageTitle } = data;
+const description = data.description ?? localData.description;
 ---
 
-<Layout title={webpageTitle} description={intro}>
+<Layout title={webpageTitle} description={description}>
   	<Nav />
 	<Home />
+	<Services />
 	<Career />
 	<Projects />
 	<Tech />

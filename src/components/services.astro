@@ -1,0 +1,37 @@
+---
+import data from '../data/services.json';
+---
+
+<section id="services" class="section-container">
+  <div class="container mx-auto">
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-maintext mb-4 flex items-center gap-4">
+      <span class="text-accent">/</span> {data.title}
+    </h2>
+    <p class="max-w-3xl text-subtext font-body leading-relaxed">{data.intro}</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+      {data.areas.map((area) => (
+        <article class="rounded-2xl border border-accent/20 bg-accent/5 p-6">
+          <h3 class="text-lg font-heading font-bold text-maintext mb-3">{area.title}</h3>
+          <p class="text-sm text-subtext leading-relaxed">{area.text}</p>
+        </article>
+      ))}
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-10">
+      <div>
+        <h3 class="text-xl font-heading font-bold text-maintext mb-4">{data.serviceTitle}</h3>
+        <p class="text-subtext text-sm leading-relaxed mb-5">{data.input}</p>
+        <ol class="list-decimal pl-5 space-y-3 text-maintext text-sm leading-relaxed marker:text-accent">
+          {data.outputs.map((output) => <li class="pl-2">{output}</li>)}
+        </ol>
+      </div>
+      <div class="rounded-2xl border border-accent/20 p-6 md:p-8">
+        <h3 class="text-xl font-heading font-bold text-maintext mb-4">{data.collaborationTitle}</h3>
+        <p class="text-subtext text-sm leading-relaxed">{data.collaboration}</p>
+        <p class="text-subtext text-sm leading-relaxed mt-4">{data.ai}</p>
+        <a href="#contact" class="inline-flex mt-6 rounded-full border border-accent/50 bg-accent/10 px-5 py-3 text-sm text-maintext hover:bg-accent/20 focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-2">{data.cta}</a>
+      </div>
+    </div>
+  </div>
+</section>
