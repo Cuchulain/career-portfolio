@@ -20,7 +20,6 @@ import localData from '../data/home.json';
         {localData.socials
         .filter((social) => social.showInContact && social.url && social.url !== "#" && social.url !== "")
         .map((social) => (
-          <!-- Added 'contact-card' and 'opacity-0' here -->
           <a
             href={social.url}
             target="_blank"
@@ -96,6 +95,8 @@ import localData from '../data/home.json';
     const header = document.querySelector('.contact-header');
     const footer = document.querySelector('.contact-footer');
     const cards = document.querySelectorAll('.contact-card');
+    const cardIndexMap = new Map<Element, number>();
+    cards.forEach((card, index) => cardIndexMap.set(card, index));
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -103,7 +104,7 @@ import localData from '../data/home.json';
           const target = entry.target as HTMLElement;
 
           if (target.classList.contains('contact-card')) {
-            const index = Array.from(cards).indexOf(target);
+            const index = (cardIndexMap.get(target) ?? 0);
             // Stagger effect for the 4-column grid
             setTimeout(() => {
               target.classList.add('reveal');

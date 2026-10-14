@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css'
+import { SITE_CONFIG } from '../config';
 import profileData from '../data/home.json';
 import { getImage } from 'astro:assets';
 import defaultOgImageSrc from '../assets/images/profilovka-kreslena-obdelnik-dev.png';
@@ -38,10 +39,30 @@ const ogImage = image
   : `${siteUrl}${processedOgImage.src}`;
 
 
-// ----- THEME VARIABLE -----
-// FEEL FREE TO CHANGE THIS TO ONE OF THE OPTIONS
-// Options: 'default', 'strategic', 'innovator', 'executive'
-const baseTheme = 'default';
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': `${canonical}#website`,
+      name: profileData.name,
+      url: canonical,
+    },
+    {
+      '@type': 'Person',
+      '@id': `${canonical}#person`,
+      name: profileData.name,
+      url: canonical,
+      image: ogImage,
+      description,
+      sameAs: profileData.socials
+        .filter((social) => social.showInHero && /^https?:\/\//.test(social.url))
+        .map((social) => social.url),
+    },
+  ],
+};
+
+const baseTheme = SITE_CONFIG.baseTheme;
 
 const defaultTheme = `${baseTheme}-dark`;
 ---
@@ -67,6 +88,9 @@ const defaultTheme = `${baseTheme}-dark`;
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage} />
+    {!image && <meta property="og:image:width" content="1200" />}
+    {!image && <meta property="og:image:height" content="630" />}
+    <meta property="og:image:alt" content={`Portfolio – ${profileData.name}`} />
     <meta property="og:site_name" content="Jan Čejka" />
     <meta property="og:locale" content="cs_CZ" />
 
@@ -75,6 +99,13 @@ const defaultTheme = `${baseTheme}-dark`;
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
+
+    <!-- Structured data contains only publicly displayed profile links. -->
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify(structuredData).replace(/</g, '\\u003c')}
+    />
 
     <!-- THEME TOGGLE SCRIPT -->
     <script is:inline define:vars={{ baseTheme, defaultTheme }}>
@@ -87,6 +118,16 @@ const defaultTheme = `${baseTheme}-dark`;
         localStorage.setItem('theme', defaultTheme);
       }
     </script>
+
+    <!-- Umami Analytics (production only) -->
+    {import.meta.env.PROD && (
+      <script
+        is:inline
+        defer
+        src={SITE_CONFIG.umami.scriptUrl}
+        data-website-id={SITE_CONFIG.umami.websiteId}
+      ></script>
+    )}
 
     <!-- Cloudflare Web Analytics -->
     <script is:inline defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "0c75910f18bb43548d8aa459fca7900b"}'></script>
@@ -168,8 +209,19 @@ const defaultTheme = `${baseTheme}-dark`;
 
 
       if (window.innerWidth > 768) {
-        // one letter every 250ms
-        setInterval(createLetter, 250);
+        let rainInterval: ReturnType<typeof setInterval> | null = null;
+
+        function updateRainVisibility() {
+          if (document.hidden) {
+            if (rainInterval !== null) clearInterval(rainInterval);
+            rainInterval = null;
+          } else if (rainInterval === null) {
+            rainInterval = setInterval(createLetter, 250);
+          }
+        }
+
+        updateRainVisibility();
+        document.addEventListener('visibilitychange', updateRainVisibility);
       } else {
         // Static scatter effect for mobile optimization
         const mobileCount = 20;

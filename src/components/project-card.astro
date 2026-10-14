@@ -1,13 +1,13 @@
 ---
 import { Icon } from 'astro-icon/components';
 import { Image, getImage } from 'astro:assets';
-import type { ImageMetadata } from 'astro';
 import placeholderSrc from '../assets/images/placeholder.png';
 const { project, resolvedImages } = Astro.props;
 
 const processedPlaceholder = await getImage({ src: placeholderSrc, width: 640, height: 360, format: 'jpeg' });
 
-const isSlider = project.images.length > 1;
+const imageSources: (string | null)[] = project.images.length ? project.images : [null];
+const isSlider = imageSources.length > 1;
 ---
 
 <div class="project-card group relative bg-accent/5 border border-accent/10 rounded-2xl overflow-hidden hover:border-accent/40 transition-all duration-500">
@@ -15,7 +15,7 @@ const isSlider = project.images.length > 1;
     <div class="absolute inset-0 bg-accent/10 group-hover:bg-transparent transition-colors z-10 pointer-events-none"></div>
 
     <div class={`w-full h-full relative ${isSlider ? 'image-slider' : ''}`}>
-      {project.images.map((img: string, index: number) => {
+      {imageSources.map((img, index) => {
         const resolved = resolvedImages?.[index];
         return resolved ? (
           <Image
@@ -25,7 +25,7 @@ const isSlider = project.images.length > 1;
           />
         ) : (
           <Image
-            src={`/${img}`}
+            src={img ? `/${img}` : processedPlaceholder.src}
             width="640"
             height="360"
             alt={`${project.title} screenshot ${index + 1}`}
@@ -71,7 +71,12 @@ const isSlider = project.images.length > 1;
 </div>
 
 <script>
+  const activeSliderIntervals: ReturnType<typeof setInterval>[] = [];
+
   function initSliders() {
+    activeSliderIntervals.forEach(clearInterval);
+    activeSliderIntervals.length = 0;
+
     const sliders = document.querySelectorAll('.image-slider');
 
     sliders.forEach(slider => {
@@ -79,7 +84,7 @@ const isSlider = project.images.length > 1;
       if (images.length <= 1) return;
 
       let currentIndex = 0;
-      setInterval(() => {
+      const interval = setInterval(() => {
         // Hide current
         images[currentIndex].classList.remove('opacity-100', 'z-0');
         images[currentIndex].classList.add('opacity-0', 'z-[-1]');
@@ -91,6 +96,7 @@ const isSlider = project.images.length > 1;
         images[currentIndex].classList.remove('opacity-0', 'z-[-1]');
         images[currentIndex].classList.add('opacity-100', 'z-0');
       }, 3500);
+      activeSliderIntervals.push(interval);
     });
   }
 

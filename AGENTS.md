@@ -5,16 +5,18 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
-npm run dev       # Start dev server at localhost:4321
-npm run build     # Build static site to ./dist/
-npm run preview   # Preview production build locally
+pnpm run dev         # Start dev server at localhost:4321
+pnpm astro check     # Type-check Astro components
+pnpm run build       # Build static site to ./dist/
+pnpm run test:smoke  # Verify production output and selected client scripts after build
+pnpm run preview     # Preview production build locally
 ```
 
-No test suite is configured.
+Smoke tests in `scripts/verify-build.mjs` require a completed production build. They verify assets, analytics, SEO, theme persistence and selected client-script behavior; they do not replace a visual browser test.
 
 ## Architecture
 
-Single-page Astro SSG portfolio with hash-based navigation (`#home`, `#career`, `#projects`, `#tech`, `#contact`). Deployed to GitHub Pages via `.github/workflows/deploy.yml` on push to `master`. Production URL: `https://dev.jancejka.cz`.
+Single-page Astro SSG portfolio with hash-based navigation (`#home`, `#career`, `#projects`, `#tech`, `#contact`). Deployed to GitHub Pages via `.github/workflows/deploy.yml` on push to `master`. Production URL: `https://dev.jancejka.cz`. Node.js ≥ 22.12.0 is required for Astro 7. TypeScript stays on the latest compatible 6.x release because `@astrojs/check` does not support 7.x yet. Umami is loaded directly in `Layout.astro` for production builds, using `SITE_CONFIG.umami` from `/src/config.ts`; Cloudflare Web Analytics remains enabled.
 
 ### Content is data-driven
 
@@ -29,7 +31,7 @@ Components read this JSON at build time. There is also an **optional API fallbac
 
 ### Theme system
 
-`/src/styles/global.css` defines **4 base themes × 2 modes (dark/light) = 8 color schemes**. Themes are applied via `data-theme` on `<html>`, stored in localStorage, and set via an inline script in `Layout.astro` before the page renders (no FOUC). CSS variables used: `--color-background`, `--color-accent`, `--color-maintext`, `--color-subtext`, `--color-textrain`.
+`/src/styles/global.css` defines **4 base themes × 2 modes (dark/light) = 8 color schemes**. The default base theme is configured via `SITE_CONFIG.baseTheme` in `/src/config.ts`. Themes are applied via `data-theme` on `<html>`, stored in localStorage, and set via an inline script in `Layout.astro` before the page renders (no FOUC). CSS variables used: `--color-background`, `--color-accent`, `--color-maintext`, `--color-subtext`, `--color-textrain`.
 
 ### Icons
 

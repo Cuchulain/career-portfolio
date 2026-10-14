@@ -17,22 +17,22 @@ A high-performance, responsive portfolio built with **Astro**, **Tailwind CSS**,
 - **Frontend:** [Astro](https://astro.build/) (Static Site Generation)
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 - **Icons:** [Iconify](https://iconify.design/) via `astro-icon`
-- **Deployment:** [Netlify](https://www.netlify.com)
+- **Deployment:** [GitHub Pages](https://pages.github.com/) (`https://dev.jancejka.cz`)
 - **Backend:** [FastAPI](https://fastapi.tiangolo.com/) *(Works without backend — open source release coming soon)*
 
 ## 🚀 Getting Started
 Follow these instructions to get a local copy up and running.
 
 ### Prerequisites
-Make sure you have **Astro v6** and **Node.js** (v22.12.0 or higher) installed on your machine.
+Make sure you have **Node.js** (v22.12.0 or higher) and **pnpm** installed. **Astro v7** is installed with the project dependencies.
 
 ### Installation
 1. Click **Use this template** on this repository.
 2. Choose **Create a new repository**.
 3. Clone your new repository: `git clone <your-repo-url>`
 4. Navigate to your repo: `cd <your-repo-name>`
-5. Install dependencies: `npm install`
-6. Start development server: `npm run dev`
+5. Install dependencies: `pnpm install --frozen-lockfile`
+6. Start development server: `pnpm run dev`
 7. Update your content in `/src/data/`
 8. Build and deploy on your preferred platform
 
@@ -54,30 +54,37 @@ Directory Structure
 
 #### Useful commands and links for reference:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| Command                         | Action                                          |
+| :------------------------------ | :---------------------------------------------- |
+| `pnpm install --frozen-lockfile` | Installs dependencies                           |
+| `pnpm run dev`                  | Starts local dev server at `localhost:4321`      |
+| `pnpm run build`                | Build your production site to `./dist/`          |
+| `pnpm run preview`              | Preview your build locally, before deploying    |
+| `pnpm astro ...`                | Run CLI commands like `astro add`, `astro check` |
+| `pnpm astro --help`             | Get help using the Astro CLI                    |
 
-Tailwind CSS: `npx astro add tailwind`
+Tailwind CSS: `pnpm astro add tailwind`
 
-Inter font: `npm install @fontsource-variable/inter` 
+Inter font: `pnpm add @fontsource-variable/inter`
 
-Host Grotesk font: `npm install @fontsource-variable/host-grotesk`
+Host Grotesk font: `pnpm add @fontsource-variable/host-grotesk`
 
-Astro-icon: `npx astro add astro-icon`
+Astro-icon: `pnpm astro add astro-icon`
 
-Material Desing Icons: `npm install @iconify-json/mdi`
+Material Desing Icons: `pnpm add @iconify-json/mdi`
 
 https://docs.astro.build/en/guides/styling/#add-tailwind-4
 
 https://www.astroicon.dev
 
 https://icon-sets.iconify.design/mdi/?category=Material
+
+## Aktualizace tohoto forku
+
+Web používá Astro **7.3.8**, Tailwind **4.3.3** a aktualizované integrace,
+fonty a ikony. TypeScript zůstává na kompatibilní verzi **6.0.3**.
+[Stav aktualizace](UPDATE.md) popisuje ověřené verze, převzaté změny upstreamu
+a zbývající kontroly. Po buildu spusťte `pnpm run test:smoke`.
 
 ## 🤝 Contributing
 Contributions are welcome!  
