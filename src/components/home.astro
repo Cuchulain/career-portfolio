@@ -80,6 +80,7 @@ const processedPlaceholder = await getImage({ src: placeholderSrc, width: 96, he
         <Image
           src={resolvedPhoto}
           alt={name}
+          loading="eager"
           class="w-full h-full object-cover scale-110"
         />
       ) : (
@@ -88,6 +89,7 @@ const processedPlaceholder = await getImage({ src: placeholderSrc, width: 96, he
           width="96"
           height="96"
           alt={name}
+          loading="eager"
           onerror={`this.onerror=null;this.src='${processedPlaceholder.src}';`}
           class="w-full h-full object-cover scale-110"
         />
@@ -97,7 +99,7 @@ const processedPlaceholder = await getImage({ src: placeholderSrc, width: 96, he
   </div>
 
     <div class="reveal-content" style="animation-delay: 200ms;">
-    <p class="font-body font-light text-gray leading-relaxed">
+    <p class="font-body font-light text-subtext leading-relaxed">
       Ahoj, já jsem
     </p>
   </div>
@@ -108,7 +110,7 @@ const processedPlaceholder = await getImage({ src: placeholderSrc, width: 96, he
     </h1>
     <p class="mt-5 mb-4 text-xl md:text-2xl font-heading font-medium text-accent">{intro}</p>
     <p
-      class="text-gray font-body text-lg leading-relaxed"
+      class="text-subtext font-body text-lg leading-relaxed"
       set:html={introHtml}
     />
   </div>
@@ -254,7 +256,6 @@ const processedPlaceholder = await getImage({ src: placeholderSrc, width: 96, he
   }
 
   .balloon-float {
-    will-change: transform;
     animation: floating-balloon 8s ease-in-out infinite;
   }
 
